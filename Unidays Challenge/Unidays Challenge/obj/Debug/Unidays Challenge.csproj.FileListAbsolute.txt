@@ -1,0 +1,10 @@
+E:\Documents\GitHub\UNiDAYS-discount-challenge\Unidays Challenge\Unidays Challenge\bin\Debug\Unidays Challenge.exe.config
+E:\Documents\GitHub\UNiDAYS-discount-challenge\Unidays Challenge\Unidays Challenge\bin\Debug\Unidays Challenge.exe
+E:\Documents\GitHub\UNiDAYS-discount-challenge\Unidays Challenge\Unidays Challenge\bin\Debug\Unidays Challenge.pdb
+E:\Documents\GitHub\UNiDAYS-discount-challenge\Unidays Challenge\Unidays Challenge\obj\Debug\Unidays Challenge.csprojResolveAssemblyReference.cache
+E:\Documents\GitHub\UNiDAYS-discount-challenge\Unidays Challenge\Unidays Challenge\obj\Debug\Unidays_Challenge.Form1.resources
+E:\Documents\GitHub\UNiDAYS-discount-challenge\Unidays Challenge\Unidays Challenge\obj\Debug\Unidays_Challenge.Properties.Resources.resources
+E:\Documents\GitHub\UNiDAYS-discount-challenge\Unidays Challenge\Unidays Challenge\obj\Debug\Unidays Challenge.csproj.GenerateResource.cache
+E:\Documents\GitHub\UNiDAYS-discount-challenge\Unidays Challenge\Unidays Challenge\obj\Debug\Unidays Challenge.csproj.CoreCompileInputs.cache
+E:\Documents\GitHub\UNiDAYS-discount-challenge\Unidays Challenge\Unidays Challenge\obj\Debug\Unidays Challenge.exe
+E:\Documents\GitHub\UNiDAYS-discount-challenge\Unidays Challenge\Unidays Challenge\obj\Debug\Unidays Challenge.pdb
