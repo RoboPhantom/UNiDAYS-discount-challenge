@@ -29,6 +29,7 @@ namespace Unidays_Challenge
         {
             //example.AddToBasket(txtAdd.Text);
             txtNotice.Text = example.AddToBasket(txtAdd.Text);
+            txtBasket.Text += txtAdd.Text;
             txtAdd.Text = "";
         }
 
@@ -38,17 +39,20 @@ namespace Unidays_Challenge
 
             double totalPrice = result[0];
             double deliveryCharge = result[1];
-            txtNotice.Text = "Basket length " + result[2].ToString();
 
             txtTotal.Text = totalPrice.ToString();
             txtDelivery.Text = deliveryCharge.ToString();
             txtOverall.Text = (totalPrice + deliveryCharge).ToString();
+
+            example.Reset();
+            txtBasket.Text = "Basket: ";
+            txtNotice.Text = "Item prices calculated. Basket reset.";
         }
     }
 
     class Discounts
     {
-        // [item, price, discount quantity, discount price]
+        // [item, default price, discount quantity, discount price]
         Object[,] Pricing = { { "A", 8, 1, 8 }, { "B", 12, 2, 20 }, { "C", 4, 3, 10 }, { "D", 7, 2, 7 }, { "E", 5, 3, 10 } };
         public Object[,] PricingRules()
         {
@@ -79,6 +83,14 @@ namespace Unidays_Challenge
             // array of items (string) and quantities (int)
             //basket[0, 0] = "A";
             //basket[0, 1] = 0;
+        }
+
+        public void Reset()
+        {
+            basket.Clear();
+            amount.Clear();
+            total = 0;
+            delivery = 7;
         }
 
         public string AddToBasket(string Item)
@@ -123,7 +135,7 @@ namespace Unidays_Challenge
                     {
                         while (amount[a] > 0)
                         {
-                            if (amount[a] >= (int)Rules[b, 3])
+                            if (amount[a] >= (int)Rules[b, 2])
                             {
                                 total += (int)Rules[b, 3];
                                 amount[a] -= (int)Rules[b, 2];
@@ -145,7 +157,6 @@ namespace Unidays_Challenge
 
             Out.Add(total);
             Out.Add(delivery);
-            Out.Add(basket.Count);
             return Out;
 
         }

@@ -40,10 +40,12 @@
             this.txtNotice = new System.Windows.Forms.TextBox();
             this.txtOverall = new System.Windows.Forms.TextBox();
             this.lblOverall = new System.Windows.Forms.Label();
+            this.txtBasket = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnAdd
             // 
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(526, 203);
             this.btnAdd.Name = "btnAdd";
@@ -55,6 +57,7 @@
             // 
             // btnCalculate
             // 
+            this.btnCalculate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalculate.Location = new System.Drawing.Point(285, 332);
             this.btnCalculate.Name = "btnCalculate";
@@ -102,8 +105,10 @@
             // 
             // txtAdd
             // 
+            this.txtAdd.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAdd.Location = new System.Drawing.Point(365, 206);
+            this.txtAdd.MaxLength = 1;
             this.txtAdd.Name = "txtAdd";
             this.txtAdd.Size = new System.Drawing.Size(100, 26);
             this.txtAdd.TabIndex = 19;
@@ -122,7 +127,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(222, 66);
+            this.lblTitle.Location = new System.Drawing.Point(176, 68);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(473, 39);
             this.lblTitle.TabIndex = 17;
@@ -131,10 +136,10 @@
             // 
             // txtNotice
             // 
-            this.txtNotice.Enabled = false;
             this.txtNotice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNotice.Location = new System.Drawing.Point(12, 661);
             this.txtNotice.Name = "txtNotice";
+            this.txtNotice.ReadOnly = true;
             this.txtNotice.Size = new System.Drawing.Size(792, 26);
             this.txtNotice.TabIndex = 26;
             // 
@@ -156,11 +161,23 @@
             this.lblOverall.TabIndex = 27;
             this.lblOverall.Text = "Overall Total";
             // 
+            // txtBasket
+            // 
+            this.txtBasket.Enabled = false;
+            this.txtBasket.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBasket.Location = new System.Drawing.Point(12, 269);
+            this.txtBasket.Name = "txtBasket";
+            this.txtBasket.ReadOnly = true;
+            this.txtBasket.Size = new System.Drawing.Size(792, 26);
+            this.txtBasket.TabIndex = 29;
+            this.txtBasket.Text = "Basket: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 744);
+            this.Controls.Add(this.txtBasket);
             this.Controls.Add(this.txtOverall);
             this.Controls.Add(this.lblOverall);
             this.Controls.Add(this.txtNotice);
@@ -174,7 +191,7 @@
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.lblTitle);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Unidays Discount Challenge App";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -195,6 +212,7 @@
         private System.Windows.Forms.TextBox txtNotice;
         private System.Windows.Forms.TextBox txtOverall;
         private System.Windows.Forms.Label lblOverall;
+        private System.Windows.Forms.TextBox txtBasket;
     }
 }
 
