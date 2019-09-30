@@ -1,6 +1,7 @@
 # UNiDAYS-discount-challenge
 
-My completion of a discount challenge made by UNiDAYS for a tech placement role.
+My completion of a discount challenge made by UNiDAYS.
+Found [here](https://github.com/MyUNiDAYS/tech-placement-challenge).
 
 ## Build instructions
 This was made using C# and Visual Studio. To build this app open the Unidays Challenge.sln file in Visual Studio. Once opened click the build tab at the top and click either "Build Solution" or "Build Unidays Challenge". This will make a "Unidays Challenge.exe" application file in the "Unidays Challenge/bin/Debug" directory. This can be run on windows as a form application where you can add items (A,B,C,D,E) to a basket and then calculate the total prices.
